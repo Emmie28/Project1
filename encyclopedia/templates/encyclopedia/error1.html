@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Error1
+{% endblock %}
+
+{% block body %}
+   <h4><span style="color:brown;">{{name}}</span> already exist. Please try a different title.</h4>
+   <br>
+   <a href="{% url 'index' %}">Home</a>
+{% endblock %}
